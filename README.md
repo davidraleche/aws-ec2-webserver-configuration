@@ -1,5 +1,29 @@
-# aws-ec2-webserver
 
+
+### Create instance ec2 with ssh access
+
+(1) create ec2 instance
+
+(2) create vpc
+
+(3) create subnet - 172.30.3.0/24 250 available ip addresses
+
+(4) create internet gateway 
+
+(5) create route tables - 0.0.0.0/0 to internet gateway
+
+
+
+### Install without verification
+yum update -y
+
+
+### Install new php package
+```
+sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+sudo amazon-linux-extras enable php7.3
+sudo yum -y install php-cli php-pdo php-fpm php-json php-mysqlnd
+```
 
 
 
