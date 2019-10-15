@@ -9,10 +9,12 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerD
 (2) create vpc
 
 (3) create subnet - 172.30.3.0/24 250 available ip addresses
+make sure auto-assign IPV 4
 
 (4) create internet gateway 
 
-(5) create route tables - 0.0.0.0/0 to internet gateway
+(5) create route tables - 
+ADD 0.0.0.0/0 to internet gateway
 
 
 
