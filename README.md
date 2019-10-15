@@ -39,6 +39,19 @@ yum update -y
           TransferLog "logs/host.example.com-access_log"
         </VirtualHost>
 
+
+### SSL
+        wget https://dl.eff.org/certbot-auto
+
+
+    user@webserver:~$ wget https://dl.eff.org/certbot-auto
+    user@webserver:~$ sudo mv certbot-auto /usr/local/bin/certbot-auto
+    user@webserver:~$ sudo chown root /usr/local/bin/certbot-auto
+    user@webserver:~$ chmod 0755 /usr/local/bin/certbot-auto
+    user@webserver:~$ /usr/local/bin/certbot-auto --help
+
+    /usr/local/bin/certbot-auto --debug --apache certonly -d raleche.com
+
 ### Install new php package
 ```
 sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
