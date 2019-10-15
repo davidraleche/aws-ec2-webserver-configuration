@@ -31,6 +31,14 @@ ADD 0.0.0.0/0 to internet gateway
 yum update -y
 
 
+### apache web server
+        <VirtualHost *:80>
+          DocumentRoot "/www/docs/host.example.com"
+          ServerName ec2-3-88-63-157.compute-1.amazonaws.comm
+          ErrorLog "logs/host.example.com-error_log"
+          TransferLog "logs/host.example.com-access_log"
+        </VirtualHost>
+
 ### Install new php package
 ```
 sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
