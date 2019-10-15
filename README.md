@@ -7,6 +7,15 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerD
 (1) create ec2 instance
 
 (2) create vpc
+Make usre to have public IPV4 dns 
+
+    Get your VPC ID from your EC2 dashboard.
+    Go to VPC dashboard. Select your VPC with VPC ID.
+    Click on Actions and Select "Edit DNS Hostnames".
+    Select Yes and click Save.
+
+Now you can find Public DNS IPv4 value in EC2 dashboard.
+
 
 (3) create subnet - 172.30.3.0/24 250 available ip addresses
 make sure auto-assign IPV 4
