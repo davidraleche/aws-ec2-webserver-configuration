@@ -11,16 +11,14 @@ Refer to
     Directories 775
     Files 664
 
+### Unix command for directories
 ```
-Unix command for directories
-
 find /desired_location -type d -print0 | xargs -0 chmod 0755
+```
 
-for files
-
+### Unix command for files
+```
 find /desired_location -type f -print0 | xargs -0 chmod 0644
-
-
 ```
 
 
