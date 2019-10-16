@@ -1,8 +1,18 @@
 
+
+
 Refer to 
 ```
  https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
 ```
+
+
+### Proper Directory and file permission
+    Directories 775
+    Files 664
+
+
+
 
 ### Create instance ec2 with ssh access
 
