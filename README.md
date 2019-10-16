@@ -6,6 +6,18 @@
  https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
 ```
 
+### SSL INSTALLATION
+```
+  wget https://dl.eff.org/certbot-auto
+  sudo mv certbot-auto /usr/local/bin/certbot-auto
+  sudo chown root /usr/local/bin/certbot-auto
+  chmod 0755 /usr/local/bin/certbot-auto
+  /usr/local/bin/certbot-auto --help
+  /usr/local/bin/certbot-auto --debug --apache certonly -d david.raleche.com/
+```
+
+(1) modify  --> /etc/httpd/conf.d/ssl.conf 
+
 
 ### Activate httaccess
     <Directory /var/www/xxxx>
