@@ -7,6 +7,13 @@ Refer to
 ```
 
 
+### Activate httaccess
+    <Directory /var/www/xxxx>
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride All
+        Require all granted
+    </Directory>
+
 ### Proper Directory and file permission
     Directories 775
     Files 664
