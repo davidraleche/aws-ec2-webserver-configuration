@@ -6,6 +6,10 @@
  https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
 ```
 
+### Free SSL - Let's encrypt 
+```
+https://certbot.eff.org/lets-encrypt/debianjessie-apache
+```
 ### SSL INSTALLATION
 ```
   wget https://dl.eff.org/certbot-auto
