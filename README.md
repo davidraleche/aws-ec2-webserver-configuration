@@ -41,12 +41,12 @@ https://certbot.eff.org/lets-encrypt/debianjessie-apache
     Directories 775
     Files 664
 
-### Unix command for directories
+### Unix command for directories 755
 ```
 find /desired_location -type d -print0 | xargs -0 chmod 0755
 ```
 
-### Unix command for files
+### Unix command for files 644
 ```
 find /desired_location -type f -print0 | xargs -0 chmod 0644
 ```
