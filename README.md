@@ -16,14 +16,19 @@ https://certbot.eff.org/lets-encrypt/debianjessie-apache
   sudo mv certbot-auto /usr/local/bin/certbot-auto
   sudo chown root /usr/local/bin/certbot-auto
   chmod 0755 /usr/local/bin/certbot-auto
-  /usr/local/bin/certbot-auto --help
-  /usr/local/bin/certbot-auto --debug --apache certonly -d david.raleche.com/
+  
+  sudo /usr/local/bin/certbot-auto --apache
+
 ```
 
 (1) modify  --> /etc/httpd/conf.d/ssl.conf 
 -------
 (2) make sure you close http via aws inbount and ACL
 
+### THE SSL COMMAND
+```
+  sudo /usr/local/bin/certbot-auto --apache
+```
 
 ### Activate httaccess
     <Directory /var/www/xxxx>
