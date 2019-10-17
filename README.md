@@ -17,7 +17,7 @@
 ```
 
 (1) modify  --> /etc/httpd/conf.d/ssl.conf 
-
+-------
 (2) make sure you close http via aws inbount and ACL
 
 
