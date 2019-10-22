@@ -43,12 +43,12 @@ https://certbot.eff.org/lets-encrypt/debianjessie-apache
 
 ### Unix command for directories 755
 ```
-find /desired_location -type d -print0 | xargs -0 chmod 0755
+find . -type d -print0 | xargs -0 chmod 0755
 ```
 
 ### Unix command for files 644
 ```
-find /desired_location -type f -print0 | xargs -0 chmod 0644
+find . -type f -print0 | xargs -0 chmod 0644
 ```
 
 
