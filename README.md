@@ -44,13 +44,18 @@ https://certbot.eff.org/lets-encrypt/debianjessie-apache
 ### Unix command for directories 755
 ```
 find . -type d -print0 | xargs -0 chmod 0755
+sudo find . -type d -print0 | sudo xargs -0 chmod 0755
 ```
 
 ### Unix command for files 644
 ```
 find . -type f -print0 | xargs -0 chmod 0644
+sudo find . -type f -print0 | sudo xargs -0 chmod 0644
+
 ```
 
+### Unix User Apache
+sudo chown -R apache:apache .
 
 
 ### Create instance ec2 with ssh access
