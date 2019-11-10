@@ -21,6 +21,8 @@ https://certbot.eff.org/lets-encrypt/debianjessie-apache
 
 ```
 
+
+
 (1) modify  --> /etc/httpd/conf.d/ssl.conf 
 -------
 (2) make sure you close http via aws inbount and ACL
@@ -57,6 +59,8 @@ sudo find . -type f -print0 | sudo xargs -0 chmod 0644
 ### Unix User Apache
 sudo chown -R apache:apache .
 
+### Find hacked files
+``` grep -r --include=*.php -e '[[:alnum:]\/\+]\{137,\}'```
 
 ### Create instance ec2 with ssh access
 
